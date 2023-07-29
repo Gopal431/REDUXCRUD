@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import UserList from './components/UserList';
+import AddUser from './components/AddUser';
+import UpdateUser from './components/UpdateUser';
+import { ToastContainer } from 'react-toastify';
+import { Provider } from 'react-redux';
+import Store from './Redux/Store';
 function App() {
   return (
+    <Provider store={Store}> 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <div className='header'>
+        <Link to='/'>Home</Link>
+        <Link to='/user'>user</Link>
+
+      </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/user' element={<UserList/>}/>
+        <Route path='/user/add' element={<AddUser/>}/>
+        <Route path='/user/edit/:code' element={<UpdateUser/>}/>
+      </Routes>
+      </BrowserRouter>
+      <ToastContainer position='bottom-right'></ToastContainer>
     </div>
+    </Provider>
   );
 }
 

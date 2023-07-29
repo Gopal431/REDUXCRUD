@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Gopal Prasad",
+      "role": "27",
+      "email": "gopal@tcs.com",
+      "phone": "8759577264"
+    },
+    {
+      "id": 2,
+      "name": "Nitish Kumar",
+      "email": "nitish@tcs.com",
+      "phone": "1234567890",
+      "role": "staff"
+    },
+    {
+      "id": 3,
+      "name": "Sachin Prasad",
+      "role": "27464",
+      "email": "sachin@tcs.com",
+      "phone": "6549577264"
+    },
+    {
+      "id": 4,
+      "name": "Antesh Jha",
+      "role": "456",
+      "email": "antesh@tcs.com",
+      "phone": "8759577264"
+    },
+    {
+      "id": 5,
+      "name": "Rahul Prasad",
+      "role": "234657",
+      "email": "rahul@tcs.com",
+      "phone": "8759577264"
+    },
+    {
+      "name": "Moni tiwari",
+      "email": "moni@tcs.com",
+      "phone": "123654789",
+      "role": "admin",
+      "id": 6
+    }
+  ]
+}
